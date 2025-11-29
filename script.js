@@ -344,6 +344,236 @@ const translations = {
         footer: {
             rights: "Alle Rechte vorbehalten."
         }
+    },
+    es: {
+        nav: {
+            screenshots: "Capturas de Pantalla",
+            faq: "Preguntas Frecuentes",
+            privacy: "Política de Privacidad",
+            contact: "Contacto"
+        },
+        hero: {
+            subtitle: "Un emocionante juego de defensa de torres donde defiendes tu colonia marciana de invasores alienígenas"
+        },
+        screenshots: {
+            title: "Capturas de Pantalla del Juego",
+            subtitle: "Ve Mars Defence en acción"
+        },
+        faq: {
+            title: "Preguntas Frecuentes",
+            subtitle: "Encuentra respuestas a preguntas populares sobre Mars Defence",
+            q1: {
+                question: "¿Hay contenido de pago en el juego?",
+                answer: "No, el juego es completamente gratuito y no contiene compras dentro de la aplicación."
+            },
+            q2: {
+                question: "¿Puedo jugar sin internet?",
+                answer: "Sí, el juego funciona completamente sin conexión. Internet solo es necesario para mostrar anuncios."
+            },
+            q3: {
+                question: "¿El juego recopila mis datos?",
+                answer: "El juego en sí no recopila datos personales y almacena todos los datos del juego localmente en tu dispositivo. Sin embargo, Mars Defence puede recopilar datos técnicos y analíticos no personalizados (como registros de errores, métricas de rendimiento y estadísticas de uso agregadas) con el propósito de mejorar el rendimiento del juego y realizar análisis estadísticos. Todos estos datos están anonimizados y no pueden usarse para identificar usuarios individuales. Además, nuestro socio publicitario Google AdMob puede recopilar datos relacionados con la publicidad (como ID de publicidad e información del dispositivo) para mostrarte anuncios relevantes. Puedes controlar esto a través del aviso de Transparencia de Seguimiento de Aplicaciones y la configuración de tu dispositivo."
+            },
+            q4: {
+                question: "¿Qué datos recopila la publicidad?",
+                answer: "Google AdMob puede recopilar ID de publicidad, información del dispositivo, datos de uso de la aplicación y datos de ubicación general para mostrar anuncios relevantes y medir el rendimiento de los anuncios. Estos datos ayudan a proporcionarte anuncios más relevantes. Puedes controlar esta recopilación de datos a través de la configuración de privacidad de tu dispositivo y el aviso de Transparencia de Seguimiento de Aplicaciones."
+            },
+            q5: {
+                question: "¿Qué es la Transparencia de Seguimiento de Aplicaciones?",
+                answer: "La Transparencia de Seguimiento de Aplicaciones (ATT) es una función de iOS que requiere que las aplicaciones soliciten permiso antes de rastrear usuarios en otras aplicaciones y sitios web. Cuando abres Mars Defence por primera vez, verás un aviso preguntando si deseas permitir el seguimiento. Elegir \"Permitir\" habilita anuncios personalizados, mientras que \"Pedir a la App que No Rastree\" muestra anuncios no personalizados. Puedes cambiar esta configuración en cualquier momento en la configuración de tu dispositivo."
+            },
+            q6: {
+                question: "¿Cómo desactivar los anuncios?",
+                answer: "Los anuncios son parte del modelo de juego gratuito y no se pueden desactivar. Sin embargo, puedes controlar el tipo de anuncios que ves gestionando tus preferencias de seguimiento a través del aviso de Transparencia de Seguimiento de Aplicaciones y la configuración de tu dispositivo."
+            }
+        },
+        privacy: {
+            title: "Política de Privacidad",
+            infoCollection: {
+                title: "Recopilación de Información",
+                text: "Mars Defence NO recopila datos personales de los usuarios. El juego funciona completamente de forma local en tu dispositivo."
+            },
+            analytics: {
+                title: "Análisis y Registro",
+                text1: "Mars Defence puede recopilar y transmitir datos técnicos y analíticos no personalizados con el propósito de mejorar el rendimiento del juego, identificar problemas técnicos y realizar análisis estadísticos. Esta recopilación de datos se realiza automáticamente e incluye, pero no se limita a:",
+                list1: "Métricas de rendimiento de la aplicación y registros de errores",
+                list2: "Información técnica sobre especificaciones del dispositivo y sistema operativo",
+                list3: "Estadísticas de uso agregadas y patrones de juego",
+                list4: "Informes de fallos e información de diagnóstico",
+                text2: "Todos los datos recopilados están anonimizados, agregados y no pueden usarse para identificar usuarios individuales. Esta información se utiliza únicamente para fines analíticos, soporte técnico y para mejorar la experiencia general del usuario. La recopilación y el procesamiento de dichos datos se realizan de acuerdo con las regulaciones de protección de datos aplicables, incluyendo los requisitos de GDPR y CCPA."
+            },
+            advertising: {
+                title: "Publicidad",
+                text1: "El juego contiene anuncios a través de Google AdMob. Utilizamos la Transparencia de Seguimiento de Aplicaciones (ATT) para solicitar permiso para publicidad personalizada. Puedes elegir permitir o denegar el seguimiento cuando se te solicite.",
+                text2: "Los anuncios pueden estar personalizados según tus intereses y uso de la aplicación, o no personalizados si decides no permitir el seguimiento. Puedes gestionar tus preferencias de publicidad en la configuración de tu dispositivo en cualquier momento.",
+                text3: "Para más información sobre cómo Google AdMob maneja tus datos, consulta su Política de Privacidad."
+            },
+            thirdParty: {
+                title: "Recopilación de Datos por Terceros",
+                text1: "Google AdMob, nuestro socio publicitario, puede recopilar cierta información, incluyendo:",
+                list1: "ID de publicidad (IDFA en iOS, GAID en Android)",
+                list2: "Información del dispositivo (modelo, versión del sistema operativo)",
+                list3: "Datos de uso de la aplicación e interacción con anuncios",
+                list4: "Datos de ubicación general (nivel de país/región)",
+                text2: "Estos datos se utilizan para mostrarte anuncios relevantes y medir el rendimiento de los anuncios. Cumplimos con las regulaciones GDPR (UE) y CCPA (EE. UU.) con respecto a la recopilación y el procesamiento de datos."
+            },
+            choices: {
+                title: "Tus Opciones de Privacidad",
+                text: "Tienes control sobre tu configuración de privacidad:",
+                list1: "Transparencia de Seguimiento de Aplicaciones (iOS): Cuando se te solicite, puedes elegir \"Pedir a la App que No Rastree\" o \"Permitir\" el seguimiento para anuncios personalizados.",
+                list2: "Gestión de Consentimiento (UE/EE. UU.): Puedes gestionar tus preferencias de consentimiento para la recopilación de datos y la publicidad personalizada.",
+                list3: "Configuración del Dispositivo: Puedes desactivar el ID de publicidad o restablecerlo en la configuración de privacidad de tu dispositivo.",
+                list4: "Personalización de Anuncios: Puedes optar por no recibir anuncios personalizados a través de la configuración de tu cuenta de Google."
+            },
+            localData: {
+                title: "Datos Locales",
+                text: "El juego guarda solo datos locales en tu dispositivo: progreso del juego, configuración del juego y estadísticas de finalización."
+            },
+            children: {
+                title: "Niños",
+                text: "El juego no está destinado a niños menores de 13 años y no recopila información de niños. Cumplimos con los requisitos de COPPA (Ley de Protección de la Privacidad en Línea de los Niños). Para usuarios menores de 13 años, solo se muestran anuncios no personalizados."
+            },
+            changes: {
+                title: "Cambios en esta Política de Privacidad",
+                text: "Nos reservamos el derecho de modificar esta Política de Privacidad en cualquier momento. Cualquier cambio entrará en vigor inmediatamente después de publicar la política actualizada en este sitio web. Notificaremos a los usuarios sobre cambios materiales actualizando la fecha de \"Última Actualización\" en la parte superior de esta política o mediante otros medios apropiados. Tu uso continuado del juego después de cualquier modificación constituye la aceptación de la Política de Privacidad actualizada. Te recomendamos que revises esta política periódicamente para mantenerte informado sobre cómo protegemos tu información."
+            }
+        },
+        contact: {
+            title: "Contáctanos",
+            support: {
+                title: "Soporte al Jugador"
+            },
+            bug: {
+                title: "Reportar un Error",
+                text: "Al reportar errores, describe:<br>- Versión del juego<br>- Dispositivo y sistema operativo<br>- Descripción detallada del problema<br>- Pasos para reproducir"
+            },
+            form: {
+                name: "Nombre",
+                email: "Dirección de Correo Electrónico",
+                message: "Mensaje",
+                submit: "Enviar Mensaje",
+                success: "¡Gracias! ¡Tu mensaje ha sido recibido!",
+                error: "¡Ups! Algo salió mal al enviar el formulario."
+            }
+        },
+        footer: {
+            rights: "Todos los derechos reservados."
+        }
+    },
+    zh: {
+        nav: {
+            screenshots: "游戏截图",
+            faq: "常见问题",
+            privacy: "隐私政策",
+            contact: "联系我们"
+        },
+        hero: {
+            subtitle: "一款激动人心的塔防游戏，您需要保卫您的火星殖民地免受外星入侵者的攻击"
+        },
+        screenshots: {
+            title: "游戏截图",
+            subtitle: "观看 Mars Defence 的实际游戏画面"
+        },
+        faq: {
+            title: "常见问题",
+            subtitle: "查找关于 Mars Defence 的常见问题答案",
+            q1: {
+                question: "游戏中有付费内容吗？",
+                answer: "不，游戏完全免费，不包含任何应用内购买。"
+            },
+            q2: {
+                question: "我可以离线游戏吗？",
+                answer: "可以，游戏完全离线运行。互联网仅用于显示广告。"
+            },
+            q3: {
+                question: "游戏会收集我的数据吗？",
+                answer: "游戏本身不收集个人数据，所有游戏数据都本地存储在您的设备上。但是，Mars Defence 可能会收集非个性化的技术和分析数据（如错误日志、性能指标和聚合使用统计），以改善游戏性能和进行统计分析。所有此类数据都是匿名和聚合的，不能用于识别个人用户。此外，我们的广告合作伙伴 Google AdMob 可能会收集与广告相关的数据（如广告 ID 和设备信息）以向您显示相关广告。您可以通过应用跟踪透明度提示和设备设置来控制此功能。"
+            },
+            q4: {
+                question: "广告收集哪些数据？",
+                answer: "Google AdMob 可能会收集广告 ID、设备信息、应用使用数据和一般位置数据，以显示相关广告并衡量广告效果。这些数据有助于为您提供更相关的广告。您可以通过设备的隐私设置和应用跟踪透明度提示来控制此数据收集。"
+            },
+            q5: {
+                question: "什么是应用跟踪透明度？",
+                answer: "应用跟踪透明度（ATT）是 iOS 的一项功能，要求应用在跨其他应用和网站跟踪用户之前请求许可。当您首次打开 Mars Defence 时，您会看到一个提示，询问是否要允许跟踪。选择\"允许\"可启用个性化广告，而\"要求应用不跟踪\"则显示非个性化广告。您可以随时在设备设置中更改此设置。"
+            },
+            q6: {
+                question: "如何禁用广告？",
+                answer: "广告是免费游戏模式的一部分，无法禁用。但是，您可以通过应用跟踪透明度提示和设备设置管理跟踪偏好来控制您看到的广告类型。"
+            }
+        },
+        privacy: {
+            title: "隐私政策",
+            infoCollection: {
+                title: "信息收集",
+                text: "Mars Defence 不会收集用户的个人数据。游戏完全在您的设备上本地运行。"
+            },
+            analytics: {
+                title: "分析和日志记录",
+                text1: "Mars Defence 可能会收集和传输非个性化的技术和分析数据，以改善游戏性能、识别技术问题并进行统计分析。此数据收集是自动执行的，包括但不限于：",
+                list1: "应用程序性能指标和错误日志",
+                list2: "有关设备规格和操作系统的技术信息",
+                list3: "聚合使用统计和游戏模式",
+                list4: "崩溃报告和诊断信息",
+                text2: "所有收集的数据都是匿名和聚合的，不能用于识别个人用户。此信息仅用于分析目的、技术支持以及增强整体用户体验。此类数据的收集和处理符合适用的数据保护法规，包括 GDPR 和 CCPA 要求。"
+            },
+            advertising: {
+                title: "广告",
+                text1: "游戏通过 Google AdMob 包含广告。我们使用应用跟踪透明度（ATT）请求个性化广告的许可。当提示时，您可以选择允许或拒绝跟踪。",
+                text2: "广告可能会根据您的兴趣和应用使用情况进行个性化，或者如果您选择不允许跟踪，则显示非个性化广告。您可以随时在设备设置中管理您的广告偏好。",
+                text3: "有关 Google AdMob 如何处理您的数据的更多信息，请查看其隐私政策。"
+            },
+            thirdParty: {
+                title: "第三方数据收集",
+                text1: "我们的广告合作伙伴 Google AdMob 可能会收集某些信息，包括：",
+                list1: "广告 ID（iOS 上的 IDFA，Android 上的 GAID）",
+                list2: "设备信息（型号、操作系统版本）",
+                list3: "应用使用数据和与广告的交互",
+                list4: "一般位置数据（国家/地区级别）",
+                text2: "此数据用于向您显示相关广告并衡量广告效果。我们遵守 GDPR（欧盟）和 CCPA（美国）关于数据收集和处理的规定。"
+            },
+            choices: {
+                title: "您的隐私选择",
+                text: "您可以控制您的隐私设置：",
+                list1: "应用跟踪透明度（iOS）：当提示时，您可以选择\"要求应用不跟踪\"或\"允许\"跟踪以获取个性化广告。",
+                list2: "同意管理（欧盟/美国）：您可以管理数据收集和个性化广告的同意偏好。",
+                list3: "设备设置：您可以在设备的隐私设置中禁用或重置广告 ID。",
+                list4: "广告个性化：您可以通过 Google 帐户设置选择退出个性化广告。"
+            },
+            localData: {
+                title: "本地数据",
+                text: "游戏仅在您的设备上保存本地数据：游戏进度、游戏设置和完成统计。"
+            },
+            children: {
+                title: "儿童",
+                text: "本游戏不适用于 13 岁以下的儿童，不会收集儿童信息。我们遵守 COPPA（儿童在线隐私保护法）要求。对于 13 岁以下的用户，仅显示非个性化广告。"
+            },
+            changes: {
+                title: "本隐私政策的变更",
+                text: "我们保留随时修改本隐私政策的权利。任何变更将在本网站上发布更新政策后立即生效。我们将通过更新本政策顶部的\"最后更新\"日期或通过其他适当方式通知用户重大变更。您在修改后继续使用游戏即表示接受更新的隐私政策。我们鼓励您定期查看本政策，以了解我们如何保护您的信息。"
+            }
+        },
+        contact: {
+            title: "联系我们",
+            support: {
+                title: "玩家支持"
+            },
+            bug: {
+                title: "报告错误",
+                text: "报告错误时，请描述：<br>- 游戏版本<br>- 设备和操作系统<br>- 问题的详细描述<br>- 重现步骤"
+            },
+            form: {
+                name: "姓名",
+                email: "电子邮件地址",
+                message: "消息",
+                submit: "发送消息",
+                success: "谢谢！您的消息已收到！",
+                error: "糟糕！提交表单时出了点问题。"
+            }
+        },
+        footer: {
+            rights: "版权所有。"
+        }
     }
 };
 
