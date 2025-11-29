@@ -245,13 +245,15 @@ body {
     transform: translateY(-2px);
 }
 
-.app-store-badge {
+.app-store-badge,
+.google-play-badge {
     height: 60px;
     width: auto;
     transition: transform 0.3s ease;
 }
 
-.app-store-badge:hover {
+.app-store-badge:hover,
+.google-play-badge:hover {
     transform: scale(1.05);
 }
 
