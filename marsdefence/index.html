@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="htmlLang">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,10 +16,14 @@
                 <h1>Mars Defence</h1>
             </div>
             <nav class="nav">
-                <a href="#screenshots" class="nav-link">Screenshots</a>
-                <a href="#faq" class="nav-link">FAQ</a>
-                <a href="#privacy" class="nav-link">Privacy Policy</a>
-                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#screenshots" class="nav-link" data-i18n="nav.screenshots">Screenshots</a>
+                <a href="#faq" class="nav-link" data-i18n="nav.faq">FAQ</a>
+                <a href="#privacy" class="nav-link" data-i18n="nav.privacy">Privacy Policy</a>
+                <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="pt">PT</button>
+                </div>
             </nav>
         </div>
     </header>
@@ -30,7 +34,7 @@
             <div class="hero-content">
                 <img src="../images/game_icon.png" alt="Mars Defence Game Icon" class="hero-game-icon">
                 <h1 class="hero-title">Mars Defence</h1>
-                <p class="hero-subtitle">An exciting tower defense game where you defend your Martian colony from alien invaders</p>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">An exciting tower defense game where you defend your Martian colony from alien invaders</p>
                 <div class="hero-buttons">
                     <a href="https://apps.apple.com/us/app/mars-defence/id6751149620" target="_blank" rel="noopener noreferrer">
                         <img src="../images/app_store_badge.svg" alt="Download on the App Store" class="app-store-badge">
@@ -43,8 +47,8 @@
     <!-- Game Screenshots Section -->
     <section id="screenshots" class="screenshots">
         <div class="container">
-            <h2 class="section-title">Game Screenshots</h2>
-            <p class="section-subtitle">See Mars Defence in action</p>
+            <h2 class="section-title" data-i18n="screenshots.title">Game Screenshots</h2>
+            <p class="section-subtitle" data-i18n="screenshots.subtitle">See Mars Defence in action</p>
             <div class="screenshots-container">
                 <button class="nav-btn nav-btn-left" id="prevBtn">&lt;</button>
                 <div class="screenshot-display" id="screenshotDisplay">
@@ -61,61 +65,61 @@
     <!-- FAQ Section -->
     <section id="faq" class="faq">
         <div class="container">
-            <h2 class="section-title">Frequently Asked Questions</h2>
-            <p class="section-subtitle">Find answers to popular questions about Mars Defence</p>
+            <h2 class="section-title" data-i18n="faq.title">Frequently Asked Questions</h2>
+            <p class="section-subtitle" data-i18n="faq.subtitle">Find answers to popular questions about Mars Defence</p>
             <div class="faq-list">
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>Is there paid content in the game?</h3>
+                        <h3 data-i18n="faq.q1.question">Is there paid content in the game?</h3>
                         <span class="faq-toggle">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>No, the game is completely free and contains no in-app purchases.</p>
+                        <p data-i18n="faq.q1.answer">No, the game is completely free and contains no in-app purchases.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>Can I play without internet?</h3>
+                        <h3 data-i18n="faq.q2.question">Can I play without internet?</h3>
                         <span class="faq-toggle">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Yes, the game works completely offline. Internet is only needed for showing ads.</p>
+                        <p data-i18n="faq.q2.answer">Yes, the game works completely offline. Internet is only needed for showing ads.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>Does the game collect my data?</h3>
+                        <h3 data-i18n="faq.q3.question">Does the game collect my data?</h3>
                         <span class="faq-toggle">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>The game itself does not collect personal data and stores all game data locally on your device. However, Mars Defence may collect non-personalized technical and analytical data (such as error logs, performance metrics, and aggregated usage statistics) for the purpose of improving game performance and conducting statistical analysis. All such data is anonymized and cannot be used to identify individual users. Additionally, our advertising partner Google AdMob may collect advertising-related data (like advertising ID and device information) to show you relevant ads. You can control this through the App Tracking Transparency prompt and your device settings.</p>
+                        <p data-i18n="faq.q3.answer">The game itself does not collect personal data and stores all game data locally on your device. However, Mars Defence may collect non-personalized technical and analytical data (such as error logs, performance metrics, and aggregated usage statistics) for the purpose of improving game performance and conducting statistical analysis. All such data is anonymized and cannot be used to identify individual users. Additionally, our advertising partner Google AdMob may collect advertising-related data (like advertising ID and device information) to show you relevant ads. You can control this through the App Tracking Transparency prompt and your device settings.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>What data does advertising collect?</h3>
+                        <h3 data-i18n="faq.q4.question">What data does advertising collect?</h3>
                         <span class="faq-toggle">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Google AdMob may collect advertising ID, device information, app usage data, and general location data to show relevant ads and measure ad performance. This data helps provide you with more relevant advertisements. You can control this data collection through your device's privacy settings and the App Tracking Transparency prompt.</p>
+                        <p data-i18n="faq.q4.answer">Google AdMob may collect advertising ID, device information, app usage data, and general location data to show relevant ads and measure ad performance. This data helps provide you with more relevant advertisements. You can control this data collection through your device's privacy settings and the App Tracking Transparency prompt.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>What is App Tracking Transparency?</h3>
+                        <h3 data-i18n="faq.q5.question">What is App Tracking Transparency?</h3>
                         <span class="faq-toggle">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>App Tracking Transparency (ATT) is an iOS feature that requires apps to ask permission before tracking users across other apps and websites. When you first open Mars Defence, you'll see a prompt asking if you want to allow tracking. Choosing "Allow" enables personalized ads, while "Ask App Not to Track" shows non-personalized ads. You can change this setting anytime in your device settings.</p>
+                        <p data-i18n="faq.q5.answer">App Tracking Transparency (ATT) is an iOS feature that requires apps to ask permission before tracking users across other apps and websites. When you first open Mars Defence, you'll see a prompt asking if you want to allow tracking. Choosing "Allow" enables personalized ads, while "Ask App Not to Track" shows non-personalized ads. You can change this setting anytime in your device settings.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>How to disable ads?</h3>
+                        <h3 data-i18n="faq.q6.question">How to disable ads?</h3>
                         <span class="faq-toggle">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Ads are part of the free game model and cannot be disabled. However, you can control the type of ads you see by managing your tracking preferences through the App Tracking Transparency prompt and your device settings.</p>
+                        <p data-i18n="faq.q6.answer">Ads are part of the free game model and cannot be disabled. However, you can control the type of ads you see by managing your tracking preferences through the App Tracking Transparency prompt and your device settings.</p>
                     </div>
                 </div>
             </div>
@@ -125,69 +129,69 @@
     <!-- Privacy Policy Section -->
     <section id="privacy" class="privacy">
         <div class="container">
-            <h2 class="section-title">Privacy Policy</h2>
+            <h2 class="section-title" data-i18n="privacy.title">Privacy Policy</h2>
             
             <div class="privacy-content">
                 <div class="privacy-section">
-                    <h3>Information Collection</h3>
-                    <p>Mars Defence does NOT collect personal data from users. The game works completely locally on your device.</p>
+                    <h3 data-i18n="privacy.infoCollection.title">Information Collection</h3>
+                    <p data-i18n="privacy.infoCollection.text">Mars Defence does NOT collect personal data from users. The game works completely locally on your device.</p>
                 </div>
 
                 <div class="privacy-section">
-                    <h3>Analytics and Logging</h3>
-                    <p>Mars Defence may collect and transmit non-personalized technical and analytical data for the purpose of improving game performance, identifying technical issues, and conducting statistical analysis. This data collection is performed automatically and includes, but is not limited to:</p>
+                    <h3 data-i18n="privacy.analytics.title">Analytics and Logging</h3>
+                    <p data-i18n="privacy.analytics.text1">Mars Defence may collect and transmit non-personalized technical and analytical data for the purpose of improving game performance, identifying technical issues, and conducting statistical analysis. This data collection is performed automatically and includes, but is not limited to:</p>
                     <ul>
-                        <li>Application performance metrics and error logs</li>
-                        <li>Technical information about device specifications and operating system</li>
-                        <li>Aggregated usage statistics and gameplay patterns</li>
-                        <li>Crash reports and diagnostic information</li>
+                        <li data-i18n="privacy.analytics.list1">Application performance metrics and error logs</li>
+                        <li data-i18n="privacy.analytics.list2">Technical information about device specifications and operating system</li>
+                        <li data-i18n="privacy.analytics.list3">Aggregated usage statistics and gameplay patterns</li>
+                        <li data-i18n="privacy.analytics.list4">Crash reports and diagnostic information</li>
                     </ul>
-                    <p>All collected data is anonymized, aggregated, and cannot be used to identify individual users. This information is used solely for analytical purposes, technical support, and to enhance the overall user experience. The collection and processing of such data is conducted in accordance with applicable data protection regulations, including GDPR and CCPA requirements.</p>
+                    <p data-i18n="privacy.analytics.text2">All collected data is anonymized, aggregated, and cannot be used to identify individual users. This information is used solely for analytical purposes, technical support, and to enhance the overall user experience. The collection and processing of such data is conducted in accordance with applicable data protection regulations, including GDPR and CCPA requirements.</p>
                 </div>
 
                 <div class="privacy-section">
-                    <h3>Advertising</h3>
-                    <p>The game contains ads through Google AdMob. We use App Tracking Transparency (ATT) to request permission for personalized advertising. You can choose to allow or deny tracking when prompted.</p>
-                    <p>Ads may be personalized based on your interests and app usage, or non-personalized if you choose not to allow tracking. You can manage your advertising preferences in your device settings at any time.</p>
-                    <p>For more information about how Google AdMob handles your data, please review their <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.</p>
+                    <h3 data-i18n="privacy.advertising.title">Advertising</h3>
+                    <p data-i18n="privacy.advertising.text1">The game contains ads through Google AdMob. We use App Tracking Transparency (ATT) to request permission for personalized advertising. You can choose to allow or deny tracking when prompted.</p>
+                    <p data-i18n="privacy.advertising.text2">Ads may be personalized based on your interests and app usage, or non-personalized if you choose not to allow tracking. You can manage your advertising preferences in your device settings at any time.</p>
+                    <p data-i18n="privacy.advertising.text3">For more information about how Google AdMob handles your data, please review their <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.</p>
                 </div>
 
                 <div class="privacy-section">
-                    <h3>Data Collection by Third Parties</h3>
-                    <p>Google AdMob, our advertising partner, may collect certain information including:</p>
+                    <h3 data-i18n="privacy.thirdParty.title">Data Collection by Third Parties</h3>
+                    <p data-i18n="privacy.thirdParty.text1">Google AdMob, our advertising partner, may collect certain information including:</p>
                     <ul>
-                        <li>Advertising ID (IDFA on iOS, GAID on Android)</li>
-                        <li>Device information (model, operating system version)</li>
-                        <li>App usage data and interaction with ads</li>
-                        <li>General location data (country/region level)</li>
+                        <li data-i18n="privacy.thirdParty.list1">Advertising ID (IDFA on iOS, GAID on Android)</li>
+                        <li data-i18n="privacy.thirdParty.list2">Device information (model, operating system version)</li>
+                        <li data-i18n="privacy.thirdParty.list3">App usage data and interaction with ads</li>
+                        <li data-i18n="privacy.thirdParty.list4">General location data (country/region level)</li>
                     </ul>
-                    <p>This data is used to show you relevant advertisements and measure ad performance. We comply with GDPR (EU) and CCPA (US) regulations regarding data collection and processing.</p>
+                    <p data-i18n="privacy.thirdParty.text2">This data is used to show you relevant advertisements and measure ad performance. We comply with GDPR (EU) and CCPA (US) regulations regarding data collection and processing.</p>
                 </div>
 
                 <div class="privacy-section">
-                    <h3>Your Privacy Choices</h3>
-                    <p>You have control over your privacy settings:</p>
+                    <h3 data-i18n="privacy.choices.title">Your Privacy Choices</h3>
+                    <p data-i18n="privacy.choices.text">You have control over your privacy settings:</p>
                     <ul>
-                        <li><strong>App Tracking Transparency (iOS):</strong> When prompted, you can choose to "Ask App Not to Track" or "Allow" tracking for personalized ads.</li>
-                        <li><strong>Consent Management (EU/US):</strong> You can manage your consent preferences for data collection and personalized advertising.</li>
-                        <li><strong>Device Settings:</strong> You can disable advertising ID or reset it in your device's privacy settings.</li>
-                        <li><strong>Ad Personalization:</strong> You can opt out of personalized ads through your Google account settings.</li>
+                        <li data-i18n="privacy.choices.list1"><strong>App Tracking Transparency (iOS):</strong> When prompted, you can choose to "Ask App Not to Track" or "Allow" tracking for personalized ads.</li>
+                        <li data-i18n="privacy.choices.list2"><strong>Consent Management (EU/US):</strong> You can manage your consent preferences for data collection and personalized advertising.</li>
+                        <li data-i18n="privacy.choices.list3"><strong>Device Settings:</strong> You can disable advertising ID or reset it in your device's privacy settings.</li>
+                        <li data-i18n="privacy.choices.list4"><strong>Ad Personalization:</strong> You can opt out of personalized ads through your Google account settings.</li>
                     </ul>
                 </div>
 
                 <div class="privacy-section">
-                    <h3>Local Data</h3>
-                    <p>The game saves only local data on your device: game progress, game settings and completion statistics.</p>
+                    <h3 data-i18n="privacy.localData.title">Local Data</h3>
+                    <p data-i18n="privacy.localData.text">The game saves only local data on your device: game progress, game settings and completion statistics.</p>
                 </div>
 
                 <div class="privacy-section">
-                    <h3>Children</h3>
-                    <p>The game is not intended for children under 13 years old and does not collect information from children. We comply with COPPA (Children's Online Privacy Protection Act) requirements. For users under 13, only non-personalized ads are shown.</p>
+                    <h3 data-i18n="privacy.children.title">Children</h3>
+                    <p data-i18n="privacy.children.text">The game is not intended for children under 13 years old and does not collect information from children. We comply with COPPA (Children's Online Privacy Protection Act) requirements. For users under 13, only non-personalized ads are shown.</p>
                 </div>
 
                 <div class="privacy-section">
-                    <h3>Changes to This Privacy Policy</h3>
-                    <p>We reserve the right to modify this Privacy Policy at any time. Any changes will be effective immediately upon posting the updated policy on this website. We will notify users of material changes by updating the "Last Updated" date at the top of this policy or through other appropriate means. Your continued use of the game after any modifications constitutes acceptance of the updated Privacy Policy. We encourage you to review this policy periodically to stay informed about how we protect your information.</p>
+                    <h3 data-i18n="privacy.changes.title">Changes to This Privacy Policy</h3>
+                    <p data-i18n="privacy.changes.text">We reserve the right to modify this Privacy Policy at any time. Any changes will be effective immediately upon posting the updated policy on this website. We will notify users of material changes by updating the "Last Updated" date at the top of this policy or through other appropriate means. Your continued use of the game after any modifications constitutes acceptance of the updated Privacy Policy. We encourage you to review this policy periodically to stay informed about how we protect your information.</p>
                 </div>
             </div>
         </div>
@@ -196,17 +200,17 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Contact Us</h2>
+            <h2 class="section-title" data-i18n="contact.title">Contact Us</h2>
             
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-item">
-                        <h3>Player Support</h3>
+                        <h3 data-i18n="contact.support.title">Player Support</h3>
                         <p><a href="mailto:maxim.micrafts@gmail.com" class="email-link">maxim.micrafts@gmail.com</a></p>
                     </div>
                     <div class="contact-item">
-                        <h3>Report a Bug</h3>
-                        <p>When reporting bugs, please describe:<br>
+                        <h3 data-i18n="contact.bug.title">Report a Bug</h3>
+                        <p data-i18n="contact.bug.text">When reporting bugs, please describe:<br>
                         - Game version<br>
                         - Device and operating system<br>
                         - Detailed description of the problem<br>
@@ -216,27 +220,27 @@
 
                 <form class="contact-form" id="contactForm" action="https://formspree.io/f/mblzobva" method="POST">
                     <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Name" required>
+                        <input type="text" id="name" name="name" data-i18n-placeholder="contact.form.name" placeholder="Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Email Address" required>
+                        <input type="email" id="email" name="email" data-i18n-placeholder="contact.form.email" placeholder="Email Address" required>
                     </div>
                     <div class="form-group">
-                        <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
+                        <textarea id="message" name="message" data-i18n-placeholder="contact.form.message" placeholder="Message" rows="5" required></textarea>
                     </div>
                     <!-- Hidden field for form identification -->
                     <input type="hidden" name="_subject" value="Mars Defence - Contact Form">
                     <input type="hidden" name="_next" value="?success=true">
                     <input type="hidden" name="_captcha" value="false">
-                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <button type="submit" class="btn btn-primary" data-i18n="contact.form.submit">Send Message</button>
                 </form>
             </div>
 
             <div class="form-message" id="formMessage" style="display: none;">
-                <p>Thank you! Your submission has been received!</p>
+                <p data-i18n="contact.form.success">Thank you! Your submission has been received!</p>
             </div>
             <div class="form-error" id="formError" style="display: none;">
-                <p>Oops! Something went wrong while submitting the form.</p>
+                <p data-i18n="contact.form.error">Oops! Something went wrong while submitting the form.</p>
             </div>
         </div>
     </section>
@@ -244,7 +248,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Mars Defence. All rights reserved.</p>
+            <p>&copy; 2025 Mars Defence. <span data-i18n="footer.rights">All rights reserved.</span></p>
         </div>
     </footer>
 

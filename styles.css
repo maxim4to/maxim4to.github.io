@@ -91,6 +91,44 @@ body {
     width: 100%;
 }
 
+/* Language Switcher */
+.language-switcher {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 1rem;
+    align-items: center;
+}
+
+.lang-btn {
+    background: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Inter', sans-serif;
+}
+
+.lang-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #f2d271;
+    color: #f2d271;
+}
+
+.lang-btn.active {
+    background: linear-gradient(135deg, #f2d271, #a63d39);
+    border-color: transparent;
+    color: #ffffff;
+}
+
+.lang-btn.active:hover {
+    background: linear-gradient(135deg, #f2d271, #a63d39);
+    transform: scale(1.05);
+}
+
 /* Hero Section */
 .hero {
     background: #130f25;
@@ -598,6 +636,11 @@ section {
 @media (max-width: 768px) {
     .nav {
         display: none;
+    }
+    
+    .language-switcher {
+        margin-left: 0;
+        margin-top: 1rem;
     }
     
     .hero-game-icon {
