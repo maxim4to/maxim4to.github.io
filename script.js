@@ -229,6 +229,121 @@ const translations = {
         footer: {
             rights: "Todos os direitos reservados."
         }
+    },
+    de: {
+        nav: {
+            screenshots: "Screenshots",
+            faq: "FAQ",
+            privacy: "Datenschutzerklärung",
+            contact: "Kontakt"
+        },
+        hero: {
+            subtitle: "Ein aufregendes Tower-Defense-Spiel, in dem du deine Mars-Kolonie vor außerirdischen Invasoren verteidigst"
+        },
+        screenshots: {
+            title: "Spiel-Screenshots",
+            subtitle: "Sieh Mars Defence in Aktion"
+        },
+        faq: {
+            title: "Häufig gestellte Fragen",
+            subtitle: "Finde Antworten auf beliebte Fragen zu Mars Defence",
+            q1: {
+                question: "Gibt es kostenpflichtige Inhalte im Spiel?",
+                answer: "Nein, das Spiel ist vollständig kostenlos und enthält keine In-App-Käufe."
+            },
+            q2: {
+                question: "Kann ich ohne Internet spielen?",
+                answer: "Ja, das Spiel funktioniert vollständig offline. Internet wird nur für die Anzeige von Werbung benötigt."
+            },
+            q3: {
+                question: "Sammelt das Spiel meine Daten?",
+                answer: "Das Spiel selbst sammelt keine persönlichen Daten und speichert alle Spieldaten lokal auf Ihrem Gerät. Mars Defence kann jedoch nicht personalisierte technische und analytische Daten (wie Fehlerprotokolle, Leistungsmetriken und aggregierte Nutzungsstatistiken) sammeln, um die Spielleistung zu verbessern und statistische Analysen durchzuführen. Alle diese Daten sind anonymisiert und können nicht zur Identifizierung einzelner Benutzer verwendet werden. Zusätzlich kann unser Werbepartner Google AdMob werbebezogene Daten (wie Werbe-ID und Geräteinformationen) sammeln, um Ihnen relevante Anzeigen zu zeigen. Sie können dies über die App-Tracking-Transparenz-Aufforderung und Ihre Geräteeinstellungen steuern."
+            },
+            q4: {
+                question: "Welche Daten sammelt die Werbung?",
+                answer: "Google AdMob kann Werbe-ID, Geräteinformationen, App-Nutzungsdaten und allgemeine Standortdaten sammeln, um relevante Anzeigen anzuzeigen und die Anzeigenleistung zu messen. Diese Daten helfen dabei, Ihnen relevantere Werbung zu bieten. Sie können diese Datensammlung über die Datenschutzeinstellungen Ihres Geräts und die App-Tracking-Transparenz-Aufforderung steuern."
+            },
+            q5: {
+                question: "Was ist App-Tracking-Transparenz?",
+                answer: "App-Tracking-Transparenz (ATT) ist eine iOS-Funktion, die Apps dazu verpflichtet, vor dem Tracking von Benutzern über andere Apps und Websites um Erlaubnis zu fragen. Wenn Sie Mars Defence zum ersten Mal öffnen, sehen Sie eine Aufforderung, ob Sie das Tracking zulassen möchten. Die Auswahl von \"Erlauben\" aktiviert personalisierte Anzeigen, während \"App nicht zum Tracking auffordern\" nicht personalisierte Anzeigen zeigt. Sie können diese Einstellung jederzeit in Ihren Geräteeinstellungen ändern."
+            },
+            q6: {
+                question: "Wie deaktiviere ich Anzeigen?",
+                answer: "Anzeigen sind Teil des kostenlosen Spielmodells und können nicht deaktiviert werden. Sie können jedoch die Art der Anzeigen steuern, die Sie sehen, indem Sie Ihre Tracking-Präferenzen über die App-Tracking-Transparenz-Aufforderung und Ihre Geräteeinstellungen verwalten."
+            }
+        },
+        privacy: {
+            title: "Datenschutzerklärung",
+            infoCollection: {
+                title: "Informationssammlung",
+                text: "Mars Defence sammelt KEINE persönlichen Daten von Benutzern. Das Spiel funktioniert vollständig lokal auf Ihrem Gerät."
+            },
+            analytics: {
+                title: "Analysen und Protokollierung",
+                text1: "Mars Defence kann nicht personalisierte technische und analytische Daten sammeln und übertragen, um die Spielleistung zu verbessern, technische Probleme zu identifizieren und statistische Analysen durchzuführen. Diese Datensammlung erfolgt automatisch und umfasst unter anderem:",
+                list1: "Anwendungsleistungsmetriken und Fehlerprotokolle",
+                list2: "Technische Informationen über Gerätespezifikationen und Betriebssystem",
+                list3: "Aggregierte Nutzungsstatistiken und Spielmuster",
+                list4: "Absturzberichte und Diagnoseinformationen",
+                text2: "Alle gesammelten Daten sind anonymisiert, aggregiert und können nicht zur Identifizierung einzelner Benutzer verwendet werden. Diese Informationen werden ausschließlich für analytische Zwecke, technischen Support und zur Verbesserung der Gesamtnutzererfahrung verwendet. Die Sammlung und Verarbeitung solcher Daten erfolgt in Übereinstimmung mit den geltenden Datenschutzbestimmungen, einschließlich der GDPR- und CCPA-Anforderungen."
+            },
+            advertising: {
+                title: "Werbung",
+                text1: "Das Spiel enthält Anzeigen über Google AdMob. Wir verwenden App-Tracking-Transparenz (ATT), um die Erlaubnis für personalisierte Werbung anzufordern. Sie können wählen, ob Sie das Tracking zulassen oder ablehnen möchten, wenn Sie dazu aufgefordert werden.",
+                text2: "Anzeigen können basierend auf Ihren Interessen und der App-Nutzung personalisiert werden oder nicht personalisiert sein, wenn Sie sich entscheiden, das Tracking nicht zuzulassen. Sie können Ihre Werbeeinstellungen jederzeit in Ihren Geräteeinstellungen verwalten.",
+                text3: "Für weitere Informationen darüber, wie Google AdMob Ihre Daten behandelt, lesen Sie bitte deren Datenschutzerklärung."
+            },
+            thirdParty: {
+                title: "Datensammlung durch Dritte",
+                text1: "Google AdMob, unser Werbepartner, kann bestimmte Informationen sammeln, einschließlich:",
+                list1: "Werbungs-ID (IDFA auf iOS, GAID auf Android)",
+                list2: "Geräteinformationen (Modell, Betriebssystemversion)",
+                list3: "App-Nutzungsdaten und Interaktion mit Anzeigen",
+                list4: "Allgemeine Standortdaten (Länder-/Regionsebene)",
+                text2: "Diese Daten werden verwendet, um Ihnen relevante Anzeigen anzuzeigen und die Anzeigenleistung zu messen. Wir halten uns an die GDPR- (EU) und CCPA- (US) Vorschriften bezüglich Datensammlung und -verarbeitung."
+            },
+            choices: {
+                title: "Ihre Datenschutzoptionen",
+                text: "Sie haben Kontrolle über Ihre Datenschutzeinstellungen:",
+                list1: "App-Tracking-Transparenz (iOS): Wenn Sie dazu aufgefordert werden, können Sie wählen, ob Sie die App \"Nicht zum Tracking auffordern\" oder \"Erlauben\" für personalisierte Anzeigen möchten.",
+                list2: "Einwilligungsverwaltung (EU/US): Sie können Ihre Einwilligungspräferenzen für Datensammlung und personalisierte Werbung verwalten.",
+                list3: "Geräteeinstellungen: Sie können die Werbe-ID deaktivieren oder in den Datenschutzeinstellungen Ihres Geräts zurücksetzen.",
+                list4: "Anzeigenpersonalisierung: Sie können sich über Ihre Google-Kontoeinstellungen von personalisierten Anzeigen abmelden."
+            },
+            localData: {
+                title: "Lokale Daten",
+                text: "Das Spiel speichert nur lokale Daten auf Ihrem Gerät: Spielstand, Spieleinstellungen und Abschlussstatistiken."
+            },
+            children: {
+                title: "Kinder",
+                text: "Das Spiel ist nicht für Kinder unter 13 Jahren bestimmt und sammelt keine Informationen von Kindern. Wir halten uns an die COPPA-Anforderungen (Children's Online Privacy Protection Act). Für Benutzer unter 13 Jahren werden nur nicht personalisierte Anzeigen angezeigt."
+            },
+            changes: {
+                title: "Änderungen an dieser Datenschutzerklärung",
+                text: "Wir behalten uns das Recht vor, diese Datenschutzerklärung jederzeit zu ändern. Alle Änderungen treten sofort nach der Veröffentlichung der aktualisierten Richtlinie auf dieser Website in Kraft. Wir werden Benutzer über wesentliche Änderungen informieren, indem wir das Datum der \"Letzten Aktualisierung\" oben in dieser Richtlinie aktualisieren oder auf andere angemessene Weise. Ihre fortgesetzte Nutzung des Spiels nach Änderungen stellt die Annahme der aktualisierten Datenschutzerklärung dar. Wir empfehlen Ihnen, diese Richtlinie regelmäßig zu überprüfen, um über den Schutz Ihrer Informationen informiert zu bleiben."
+            }
+        },
+        contact: {
+            title: "Kontaktieren Sie uns",
+            support: {
+                title: "Spieler-Support"
+            },
+            bug: {
+                title: "Fehler melden",
+                text: "Bitte beschreiben Sie beim Melden von Fehlern:<br>- Spielversion<br>- Gerät und Betriebssystem<br>- Detaillierte Beschreibung des Problems<br>- Schritte zur Reproduktion"
+            },
+            form: {
+                name: "Name",
+                email: "E-Mail-Adresse",
+                message: "Nachricht",
+                submit: "Nachricht senden",
+                success: "Vielen Dank! Ihre Nachricht wurde empfangen!",
+                error: "Ups! Beim Senden des Formulars ist etwas schiefgelaufen."
+            }
+        },
+        footer: {
+            rights: "Alle Rechte vorbehalten."
+        }
     }
 };
 
