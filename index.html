@@ -125,6 +125,24 @@
             align-items: flex-start;
         }
 
+        .project-card__identity {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-top: 18px;
+        }
+
+        .project-card__icon {
+            width: 56px;
+            height: 56px;
+            flex-shrink: 0;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            background: rgba(255, 255, 255, 0.06);
+            object-fit: cover;
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+        }
+
         .project-badge {
             display: inline-flex;
             align-items: center;
@@ -159,7 +177,7 @@
         }
 
         .project-card h3 {
-            margin: 20px 0 10px;
+            margin: 0;
             font-size: clamp(1.6rem, 3vw, 2.3rem);
             line-height: 1.05;
         }
@@ -217,6 +235,13 @@
                 linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
         }
 
+        .project-card--flowen {
+            background:
+                radial-gradient(circle at top right, rgba(114, 227, 212, 0.18), transparent 28%),
+                radial-gradient(circle at 18% 82%, rgba(236, 210, 255, 0.14), transparent 24%),
+                linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+        }
+
         .project-card--future .project-card__cta {
             color: #d6dbeb;
         }
@@ -263,14 +288,42 @@
 
         <section class="section" aria-label="Список проектов">
             <div class="project-grid">
+                <article class="project-card project-card--flowen">
+                    <a class="project-card__link" href="./flowen-tracker/" aria-label="Открыть проект Flowen Tracker">
+                        <div class="project-card__top">
+                            <span class="project-badge">Приложение</span>
+                            <span class="project-status status-live">Доступно сейчас</span>
+                        </div>
+                        <div class="project-card__identity">
+                            <img class="project-card__icon" src="./flowen-tracker/logo.png" alt="Иконка Flowen Tracker">
+                            <h3>Flowen Tracker</h3>
+                        </div>
+                        <div>
+                            <p>
+                                Сайт для трекера цикла и самочувствия: описание возможностей,
+                                особенности приватности, условия использования и переход к приложению.
+                            </p>
+                            <div class="project-meta" aria-label="Теги проекта">
+                                <span class="meta-pill">Cycle tracking</span>
+                                <span class="meta-pill">Privacy-first</span>
+                                <span class="meta-pill">iOS</span>
+                            </div>
+                        </div>
+                        <span class="project-card__cta">Открыть проект</span>
+                    </a>
+                </article>
+
                 <article class="project-card project-card--mars">
                     <a class="project-card__link" href="./marsdefence/" aria-label="Открыть проект Mars Defence">
                         <div class="project-card__top">
                             <span class="project-badge">Игра</span>
                             <span class="project-status status-live">Доступно сейчас</span>
                         </div>
-                        <div>
+                        <div class="project-card__identity">
+                            <img class="project-card__icon" src="./images/game_icon.png" alt="Иконка Mars Defence">
                             <h3>Mars Defence</h3>
+                        </div>
+                        <div>
                             <p>
                                 Сайт игры с описанием, скриншотами, FAQ, политикой конфиденциальности и
                                 ссылками на магазины приложений.
@@ -283,27 +336,6 @@
                         </div>
                         <span class="project-card__cta">Открыть проект</span>
                     </a>
-                </article>
-
-                <article class="project-card project-card--future" aria-label="Скоро новый проект">
-                    <div class="project-card__link" aria-disabled="true">
-                        <div class="project-card__top">
-                            <span class="project-badge">Новый проект</span>
-                            <span class="project-status status-soon">Скоро</span>
-                        </div>
-                        <div>
-                            <h3>Следующий проект</h3>
-                            <p>
-                                Здесь позже появится ещё один сайт. Карточка уже готова, поэтому
-                                добавить новый проект можно будет без переработки главной страницы.
-                            </p>
-                            <div class="project-meta" aria-label="Теги проекта">
-                                <span class="meta-pill">Placeholder</span>
-                                <span class="meta-pill">Coming soon</span>
-                            </div>
-                        </div>
-                        <span class="project-card__cta">Место зарезервировано</span>
-                    </div>
                 </article>
             </div>
         </section>
