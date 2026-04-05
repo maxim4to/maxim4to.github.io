@@ -69,18 +69,11 @@
         }
 
         .site-title {
-            display: inline-flex;
-            align-items: center;
-            padding: 10px 16px;
-            border: 1px solid var(--line);
-            border-radius: 999px;
-            background: rgba(255, 255, 255, 0.05);
+            display: block;
             color: var(--text);
-            font-size: clamp(1rem, 2vw, 1.15rem);
+            font-size: clamp(1.05rem, 2.1vw, 1.2rem);
             font-weight: 600;
-            letter-spacing: 0.04em;
-            box-shadow: var(--shadow);
-            backdrop-filter: blur(18px);
+            letter-spacing: 0.05em;
         }
 
         .section {
@@ -97,12 +90,13 @@
             grid-column: span 6;
             position: relative;
             overflow: hidden;
-            border-radius: 24px;
+            border-radius: 28px;
             border: 1px solid var(--line);
             background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
             box-shadow: var(--shadow);
             min-height: 280px;
             transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+            isolation: isolate;
         }
 
         .project-card:hover {
@@ -111,6 +105,8 @@
         }
 
         .project-card__link {
+            position: relative;
+            z-index: 1;
             display: grid;
             grid-template-rows: auto 1fr auto;
             height: 100%;
@@ -136,7 +132,7 @@
             width: 56px;
             height: 56px;
             flex-shrink: 0;
-            border-radius: 16px;
+            border-radius: 18px;
             border: 1px solid rgba(255, 255, 255, 0.14);
             background: rgba(255, 255, 255, 0.06);
             object-fit: cover;
@@ -225,8 +221,52 @@
 
         .project-card--mars {
             background:
-                radial-gradient(circle at top right, rgba(166, 61, 57, 0.22), transparent 26%),
+                radial-gradient(circle at top right, rgba(166, 61, 57, 0.24), transparent 26%),
+                radial-gradient(circle at 16% 84%, rgba(242, 210, 113, 0.1), transparent 24%),
                 linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+        }
+
+        .project-card--mars::before {
+            content: "";
+            position: absolute;
+            inset: auto -10% -16% auto;
+            width: 210px;
+            height: 210px;
+            border-radius: 999px;
+            background: radial-gradient(circle, rgba(242, 210, 113, 0.16), transparent 68%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .project-card--mars .project-card__icon {
+            box-shadow:
+                0 12px 28px rgba(0, 0, 0, 0.24),
+                0 0 0 1px rgba(242, 210, 113, 0.18);
+        }
+
+        .project-card--mars .project-badge {
+            background: rgba(166, 61, 57, 0.12);
+            border-color: rgba(166, 61, 57, 0.24);
+            color: #ffd9d6;
+        }
+
+        .project-card--mars .project-status {
+            background: rgba(242, 210, 113, 0.14);
+            border-color: rgba(242, 210, 113, 0.24);
+            color: #fff4c7;
+        }
+
+        .project-card--mars .meta-pill {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(255, 255, 255, 0.09);
+        }
+
+        .project-card--mars .project-card__cta {
+            color: #fff1bf;
+        }
+
+        .project-card--mars:hover {
+            border-color: rgba(242, 210, 113, 0.38);
         }
 
         .project-card--future {
@@ -283,7 +323,7 @@
 <body>
     <main class="shell">
         <section class="hero" aria-labelledby="page-title">
-            <div class="site-title" id="page-title">me-crafts.com</div>
+            <div class="site-title" id="page-title">Mi-Crafts Projects</div>
         </section>
 
         <section class="section" aria-label="Список проектов">

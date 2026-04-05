@@ -577,8 +577,8 @@ const translations = {
     }
 };
 
-// Language switching functionality
-let currentLang = localStorage.getItem('language') || 'en';
+// English-only mode
+const currentLang = 'en';
 
 function getNestedValue(obj, path) {
     return path.split('.').reduce((o, p) => o && o[p], obj);
@@ -591,12 +591,10 @@ function setNestedValue(obj, path, value) {
     target[lastKey] = value;
 }
 
-function translatePage(lang) {
-    currentLang = lang;
-    localStorage.setItem('language', lang);
-    document.getElementById('htmlLang').setAttribute('lang', lang);
-    
-    const translation = translations[lang];
+function translatePage() {
+    document.getElementById('htmlLang').setAttribute('lang', 'en');
+
+    const translation = translations.en;
     if (!translation) return;
     
     // Translate elements with data-i18n attribute
@@ -621,28 +619,12 @@ function translatePage(lang) {
         }
     });
     
-    // Update language buttons
-    document.querySelectorAll('.lang-btn').forEach(btn => {
-        if (btn.getAttribute('data-lang') === lang) {
-            btn.classList.add('active');
-        } else {
-            btn.classList.remove('active');
-        }
-    });
 }
 
 // Smooth scrolling for navigation links
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize language
-    translatePage(currentLang);
-    
-    // Language switcher
-    document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.addEventListener('click', function() {
-            const lang = this.getAttribute('data-lang');
-            translatePage(lang);
-        });
-    });
+    // Initialize English content only
+    translatePage();
     // FAQ Toggle functionality
     const faqItems = document.querySelectorAll('.faq-item');
     
@@ -736,35 +718,51 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('.nav-link');
-    
+    const nav = document.getElementById('nav');
+    const navGlass = document.getElementById('navGlass');
+
+    function scrollToSection(targetId, behavior = 'smooth') {
+        const targetSection = document.querySelector(targetId);
+
+        if (targetSection) {
+            const navHeight = navGlass ? navGlass.offsetHeight : (nav ? nav.offsetHeight : 0);
+            const targetPosition = Math.max(0, targetSection.offsetTop - navHeight - 16);
+
+            window.scrollTo({
+                top: targetPosition,
+                behavior
+            });
+        }
+    }
+
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
-            
+
             const targetId = this.getAttribute('href');
-            const targetSection = document.querySelector(targetId);
-            
-            if (targetSection) {
-                const headerHeight = document.querySelector('.header').offsetHeight;
-                const targetPosition = targetSection.offsetTop - headerHeight;
-                
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth'
-                });
-            }
+            if (!targetId || !targetId.startsWith('#')) return;
+
+            history.pushState({ targetId }, '', targetId);
+            scrollToSection(targetId);
         });
     });
 
-    // Header background change on scroll
-    const header = document.querySelector('.header');
-    
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 100) {
-            header.style.background = 'rgba(19, 15, 37, 0.95)';
+    function syncScrollToHash() {
+        const targetId = window.location.hash;
+
+        if (targetId) {
+            scrollToSection(targetId, 'auto');
         } else {
-            header.style.background = 'rgba(19, 15, 37, 0.9)';
+            window.scrollTo({ top: 0, behavior: 'auto' });
         }
+    }
+
+    window.addEventListener('popstate', syncScrollToHash);
+    syncScrollToHash();
+
+    // Navigation background change on scroll
+    window.addEventListener('scroll', () => {
+        nav.classList.toggle('scrolled', window.scrollY > 40);
     });
 
     // Intersection Observer for animations
@@ -851,44 +849,6 @@ document.addEventListener('DOMContentLoaded', function() {
     //         hero.style.transform = `translateY(${rate}px)`;
     //     }
     // });
-
-    // Mobile menu toggle (if needed in future)
-    function createMobileMenu() {
-        const header = document.querySelector('.header .container');
-        const nav = document.querySelector('.nav');
-        
-        if (window.innerWidth <= 768) {
-            if (!document.querySelector('.mobile-menu-toggle')) {
-                const toggle = document.createElement('button');
-                toggle.className = 'mobile-menu-toggle';
-                toggle.innerHTML = '☰';
-                toggle.style.cssText = `
-                    background: none;
-                    border: none;
-                    color: white;
-                    font-size: 1.5rem;
-                    cursor: pointer;
-                    display: block;
-                `;
-                
-                header.appendChild(toggle);
-                
-                toggle.addEventListener('click', () => {
-                    nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
-                });
-            }
-        } else {
-            const toggle = document.querySelector('.mobile-menu-toggle');
-            if (toggle) {
-                toggle.remove();
-            }
-            nav.style.display = 'flex';
-        }
-    }
-
-    // Initialize mobile menu
-    createMobileMenu();
-    window.addEventListener('resize', createMobileMenu);
 
     // Add loading animation
     window.addEventListener('load', () => {

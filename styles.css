@@ -87,132 +87,82 @@ img {
     margin: 0 auto;
 }
 
-.header {
+.nav {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
-    background: rgba(8, 10, 18, 0.7);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
-}
-
-.header .container {
+    padding: 1rem 0;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 18px;
-    padding: 16px 0;
-    flex-wrap: wrap;
+    justify-content: center;
+    pointer-events: none;
 }
 
-.logo {
+.nav-glass {
     display: flex;
     align-items: center;
-    gap: 0.8rem;
-    flex-shrink: 0;
-    min-width: 0;
-}
-
-.logo-icon {
-    width: 46px;
-    height: 46px;
-    border-radius: 14px;
+    gap: 0.5rem;
+    padding: 0.55rem 0.8rem;
+    border-radius: 999px;
+    background: rgba(8, 10, 18, 0.66);
+    backdrop-filter: blur(24px) saturate(1.2);
+    -webkit-backdrop-filter: blur(24px) saturate(1.2);
     border: 1px solid rgba(255, 255, 255, 0.12);
-    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+    box-shadow:
+        0 4px 24px rgba(0, 0, 0, 0.1),
+        0 1px 3px rgba(0, 0, 0, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    pointer-events: auto;
+    transition: background 0.4s, box-shadow 0.4s, border-color 0.4s;
+    max-width: calc(100% - 28px);
 }
 
-.logo h1 {
-    font-size: 1.15rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    background: linear-gradient(135deg, #ffffff 0%, #f2d271 46%, #ff9f8f 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    white-space: nowrap;
+.nav.scrolled .nav-glass {
+    background: rgba(10, 13, 23, 0.86);
+    border-color: rgba(242, 210, 113, 0.18);
+    box-shadow:
+        0 10px 34px rgba(0, 0, 0, 0.18),
+        0 1px 3px rgba(0, 0, 0, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
-.nav {
+.nav-links {
     display: flex;
-    gap: 1.4rem;
     align-items: center;
+    gap: 0.25rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .nav-link {
-    position: relative;
-    color: rgba(245, 247, 255, 0.88);
-    font-weight: 500;
+    display: block;
+    color: rgba(245, 247, 255, 0.9);
+    font-weight: 600;
     white-space: nowrap;
-    transition: color 180ms ease;
+    padding: 0.45rem 0.92rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    letter-spacing: 0.02em;
+    transition: color 180ms ease, background 180ms ease, transform 180ms ease;
 }
 
 .nav-link:hover {
     color: #ffffff;
-}
-
-.nav-link::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 100%;
-    height: 2px;
-    transform: scaleX(0);
-    transform-origin: left;
-    border-radius: 999px;
-    background: linear-gradient(90deg, var(--accent), var(--accent-2));
-    transition: transform 180ms ease;
-}
-
-.nav-link:hover::after {
-    transform: scaleX(1);
-}
-
-.language-switcher {
-    display: flex;
-    gap: 0.5rem;
-    margin-left: 0.5rem;
-    padding: 6px;
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.lang-btn {
-    appearance: none;
-    border: 0;
-    color: rgba(245, 247, 255, 0.88);
-    background: transparent;
-    padding: 0.52rem 0.78rem;
-    border-radius: 999px;
-    font-size: 0.86rem;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    cursor: pointer;
-    transition: transform 180ms ease, background 180ms ease, color 180ms ease, box-shadow 180ms ease;
-}
-
-.lang-btn:hover {
     background: rgba(255, 255, 255, 0.06);
     transform: translateY(-1px);
-}
-
-.lang-btn.active {
-    background: linear-gradient(135deg, rgba(242, 210, 113, 0.2), rgba(166, 61, 57, 0.25));
-    color: #ffffff;
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
 }
 
 .hero {
     position: relative;
     overflow: hidden;
-    padding: 132px 0 54px;
+    min-height: 100vh;
+    padding: 128px 0 54px;
+    display: flex;
+    align-items: center;
 }
 
 .hero::before,
@@ -247,32 +197,38 @@ img {
     grid-template-columns: minmax(0, 1fr);
     gap: 0;
     align-items: center;
+    justify-items: center;
+    width: 100%;
 }
 
 .hero-content {
-    max-width: 760px;
+    max-width: 720px;
+    position: relative;
+    text-align: center;
 }
 
 .hero-game-icon {
-    width: 118px;
-    height: 118px;
-    border-radius: 28px;
+    width: 112px;
+    height: 112px;
+    margin: 0 auto 1.1rem;
+    border-radius: 30px;
     border: 1px solid rgba(255, 255, 255, 0.14);
-    box-shadow: 0 24px 50px rgba(0, 0, 0, 0.36), 0 0 0 1px rgba(242, 210, 113, 0.15);
-    margin-bottom: 1.5rem;
+    box-shadow:
+        0 24px 50px rgba(0, 0, 0, 0.34),
+        0 0 0 1px rgba(242, 210, 113, 0.15);
 }
 
 .hero-title {
-    font-size: clamp(3.6rem, 7vw, 6.4rem);
-    line-height: 0.92;
+    margin: 0 0 1rem;
+    font-size: clamp(3rem, 7vw, 5.8rem);
+    line-height: 0.95;
     font-weight: 800;
     letter-spacing: -0.05em;
-    margin-bottom: 1rem;
-    background: linear-gradient(135deg, #ffffff 0%, #f2d271 34%, #a63d39 78%);
+    background: linear-gradient(135deg, #ffffff 0%, #f2d271 36%, #ff9f8f 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    filter: drop-shadow(0 16px 36px rgba(166, 61, 57, 0.26));
+    filter: drop-shadow(0 16px 36px rgba(166, 61, 57, 0.22));
 }
 
 .hero-subtitle {
@@ -281,6 +237,12 @@ img {
     line-height: 1.85;
     max-width: 40ch;
     margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-content .hero-subtitle {
+    max-width: 46ch;
 }
 
 .hero-buttons {
@@ -288,6 +250,7 @@ img {
     gap: 1rem;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 }
 
 .hero-buttons a {
@@ -354,10 +317,10 @@ section {
     width: 100%;
     aspect-ratio: 2870 / 1376;
     overflow: hidden;
-    border-radius: var(--radius-xl);
+    border-radius: 34px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     background:
-        radial-gradient(circle at 50% 0%, rgba(242, 210, 113, 0.08), transparent 42%),
+        radial-gradient(circle at 50% 0%, rgba(242, 210, 113, 0.1), transparent 42%),
         linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02)),
         #090b13;
     box-shadow: var(--shadow);
@@ -440,7 +403,7 @@ section {
 
 .faq-item {
     overflow: hidden;
-    border-radius: var(--radius-lg);
+    border-radius: 26px;
     border: 1px solid rgba(255, 255, 255, 0.08);
     background: var(--panel);
     box-shadow: var(--shadow-soft);
@@ -522,7 +485,7 @@ section {
 .privacy-section {
     position: relative;
     overflow: hidden;
-    border-radius: var(--radius-lg);
+    border-radius: 26px;
     border: 1px solid rgba(255, 255, 255, 0.08);
     background: var(--panel);
     box-shadow: var(--shadow-soft);
@@ -601,7 +564,7 @@ section {
     position: relative;
     overflow: hidden;
     padding: 1.6rem;
-    border-radius: var(--radius-lg);
+    border-radius: 26px;
     border: 1px solid rgba(255, 255, 255, 0.08);
     background: var(--panel);
     box-shadow: var(--shadow-soft);
@@ -730,7 +693,7 @@ section {
 .form-error {
     margin-top: 1rem;
     padding: 1rem 1.2rem;
-    border-radius: 14px;
+    border-radius: 18px;
     border: 1px solid rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(14px);
 }
@@ -781,26 +744,13 @@ section {
         width: min(100% - 28px, 1180px);
     }
 
-    .header .container {
-        padding: 14px 0;
-    }
-
     .nav {
-        gap: 1rem;
-    }
-
-    .language-switcher {
-        margin-left: 0;
-        flex-wrap: wrap;
         justify-content: center;
     }
 
     .hero {
-        padding-top: 118px;
-    }
-
-    .hero-title {
-        font-size: clamp(3rem, 14vw, 4.8rem);
+        min-height: auto;
+        padding-top: 128px;
     }
 
     section {
@@ -824,27 +774,27 @@ section {
 }
 
 @media (max-width: 540px) {
-    .header .container {
-        justify-content: center;
-    }
-
-    .logo {
-        width: 100%;
-        justify-content: center;
-    }
-
     .nav {
-        width: 100%;
-        justify-content: center;
+        padding-top: 0.65rem;
+    }
+
+    .nav-glass {
+        max-width: calc(100% - 14px);
+        padding: 0.45rem 0.55rem;
+    }
+
+    .nav-links {
+        gap: 0.1rem;
     }
 
     .hero {
-        padding-top: 126px;
+        min-height: auto;
+        padding-top: 132px;
     }
 
     .hero-buttons {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .app-store-badge,
