@@ -88,11 +88,60 @@ img {
   pointer-events: none;
 }
 
+.nav-bar {
+  display: flex;
+  align-items: stretch;
+  gap: 0.75rem;
+  pointer-events: auto;
+  max-width: calc(100% - 28px);
+  --nav-chip-size: 52px;
+}
+
+.nav-home {
+  flex: 0 0 auto;
+  align-self: center;
+  width: var(--nav-chip-size);
+  height: var(--nav-chip-size);
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(24px) saturate(1.4);
+  -webkit-backdrop-filter: blur(24px) saturate(1.4);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.06),
+    0 1px 3px rgba(0, 0, 0, 0.04),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  color: var(--text-primary);
+  transition: background 0.4s, box-shadow 0.4s, transform 0.25s;
+}
+
+.nav-home:hover {
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.08),
+    0 1px 3px rgba(0, 0, 0, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  transform: translateY(-1px);
+}
+
+.nav-home__icon {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 .nav-glass {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.5rem 0.75rem;
+  height: var(--nav-chip-size);
+  padding: 0 0.75rem;
   border-radius: 100px;
   background: rgba(255, 255, 255, 0.45);
   backdrop-filter: blur(24px) saturate(1.4);
