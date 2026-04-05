@@ -26,7 +26,7 @@
           <li><a href="#terms">Terms</a></li>
           <li><a href="#privacy">Privacy</a></li>
           <li><a href="#faq">FAQ</a></li>
-          <li><a href="https://apps.apple.com/app/flowen-tracker" class="nav-cta">Download</a></li>
+          <li><a href="https://apps.apple.com/us/app/flowen-tracker/id6761544338" class="nav-cta">Download</a></li>
         </ul>
         <button class="nav-toggle" id="navToggle" aria-label="Menu">
           <span></span><span></span><span></span>
@@ -47,10 +47,10 @@
       </div>
       <img src="logo.png" alt="Flowen" class="hero-logo">
       <h1 class="hero-brand">Flowen</h1>
-      <p class="hero-tagline">Calm. Private. Yours</p>
+      <p class="hero-tagline">Calm. Private. Yours.</p>
       <p class="hero-text">Smart tracking meets ultimate privacy. Predict your cycle, log symptoms, and access deep statistics — kept strictly for you.</p>
       <div class="hero-actions">
-        <a href="https://apps.apple.com/app/flowen-tracker" class="app-store-badge" aria-label="Download on the App Store">
+        <a href="https://apps.apple.com/us/app/flowen-tracker/id6761544338" class="app-store-badge" aria-label="Download on the App Store">
           <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
         </a>
         <a href="#how-it-works" class="hero-link">Learn more &rarr;</a>
@@ -261,11 +261,17 @@
       </div>
       <div class="faq-contact">
         <p class="faq-contact-text">Still have questions? Contact us</p>
-        <form class="contact-form" id="contactForm">
-          <input type="email" class="contact-input" placeholder="Your email" required>
-          <textarea class="contact-textarea" placeholder="Your message" rows="4" required></textarea>
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/xvzvvebn" method="POST">
+          <input type="email" class="contact-input" name="email" placeholder="Your email" required>
+          <textarea class="contact-textarea" name="message" placeholder="Your message" rows="4" required></textarea>
+          <input type="hidden" name="_subject" value="Flowen Tracker - Contact Form">
+          <input type="hidden" name="_next" value="?success=true">
+          <input type="hidden" name="_captcha" value="false">
           <button type="submit" class="contact-submit">Send</button>
         </form>
+        <div class="form-message" id="formMessage" style="display: none;">
+          <p>Thank you! Your submission has been received!</p>
+        </div>
       </div>
     </div>
   </section>
@@ -276,7 +282,7 @@
       <div class="cta-inner">
         <h2>Start flowing with<br>your <em>rhythm</em></h2>
         <p>Download Flowen and begin understanding your cycle in a way that feels intuitive, beautiful, and entirely yours.</p>
-        <a href="https://apps.apple.com/app/flowen-tracker" class="app-store-badge" aria-label="Download on the App Store">
+        <a href="https://apps.apple.com/us/app/flowen-tracker/id6761544338" class="app-store-badge" aria-label="Download on the App Store">
           <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
         </a>
       </div>
@@ -295,7 +301,7 @@
         <li><a href="terms.html">Terms of Use</a></li>
         <li><a href="mailto:support@flowen.app">Contact</a></li>
       </ul>
-      <span class="footer-copy">&copy; 2026 Flowen. All rights reserved.</span>
+      <span class="footer-copy">&copy; 2026 Mi-Crafts &mdash; All rights reserved.</span>
     </div>
   </footer>
 
@@ -344,15 +350,13 @@
       });
     });
 
-    // Contact form
-    document.getElementById('contactForm').addEventListener('submit', (e) => {
-      e.preventDefault();
-      const form = e.target;
-      const email = form.querySelector('input[type="email"]').value;
-      const message = form.querySelector('textarea').value;
-      window.location.href = `mailto:support@flowen.app?subject=Question from ${encodeURIComponent(email)}&body=${encodeURIComponent(message)}`;
-      form.reset();
-    });
+    // Contact form success state
+    const formMessage = document.getElementById('formMessage');
+    const formParams = new URLSearchParams(window.location.search);
+    if (formParams.get('success') === 'true' && formMessage) {
+      formMessage.style.display = 'block';
+      window.history.replaceState({}, document.title, window.location.pathname);
+    }
 
     document.querySelectorAll('.feature-card, .step, .terms-card, .privacy-card, .faq-item').forEach(el => {
       el.style.opacity = '0';
