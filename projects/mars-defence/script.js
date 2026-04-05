@@ -937,7 +937,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Function to force download of app-ads.txt
     function downloadAppAds() {
         const link = document.createElement('a');
-        link.href = 'app-ads.txt';
+        link.href = '../app-ads.txt';
         link.download = 'app-ads.txt';
         link.style.display = 'none';
         document.body.appendChild(link);
