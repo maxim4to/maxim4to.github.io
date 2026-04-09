@@ -2,7 +2,7 @@
 title: Maxim4to Projects
 description: A hub for Maxim4to projects, including Flowen Tracker and Mars Defence
 baseurl: ""
-url: ""
+url: "https://mi-crafts.com"
 
 # GitHub Pages settings
 plugins:
@@ -18,6 +18,8 @@ exclude:
 # Include files
 include:
   - app-ads.txt
+  - robots.txt
+  - sitemap.xml
   - .htaccess
 
 # Default settings
