@@ -4,20 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy — Lunel</title>
-  <meta name="description" content="Privacy Policy for Lunel period and cycle tracking app.">
+  <meta name="description" content="How Lunel handles cycle, wellness, Apple Health, iCloud, subscription and analytics data.">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <link rel="canonical" href="https://mi-crafts.com/projects/lunel/privacy.html">
   <meta property="og:locale" content="en_US">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Mi-Crafts">
   <meta property="og:title" content="Privacy Policy — Lunel">
-  <meta property="og:description" content="How Lunel handles cycle, wellness, subscription, sync, and analytics data.">
+  <meta property="og:description" content="What stays on your device, what leaves it, and why.">
   <meta property="og:url" content="https://mi-crafts.com/projects/lunel/privacy.html">
-  <meta property="og:image" content="https://mi-crafts.com/projects/lunel/logo.png">
+  <meta property="og:image" content="https://mi-crafts.com/projects/lunel/AppIcon-iOS-Default-1024@1x.png">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Privacy Policy — Lunel">
-  <meta name="twitter:description" content="Privacy details for the Lunel period and cycle tracking app.">
-  <link rel="icon" type="image/png" href="logo.png">
+  <meta name="twitter:description" content="How Lunel handles cycle, health, subscription and analytics data.">
+  <link rel="icon" type="image/png" href="AppIcon-iOS-Default-1024@1x.png">
+  <link rel="apple-touch-icon" href="AppIcon-iOS-Default-1024@1x.png">
+  <meta name="theme-color" content="#FAF7F2">
+  <link rel="preload" href="assets/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
   <script type="application/ld+json">
     {
@@ -25,7 +28,8 @@
       "@type": "WebPage",
       "name": "Privacy Policy — Lunel",
       "url": "https://mi-crafts.com/projects/lunel/privacy.html",
-      "description": "Privacy details for the Lunel period and cycle tracking app.",
+      "description": "How Lunel handles cycle, health, subscription and analytics data.",
+      "dateModified": "2026-11-07",
       "isPartOf": {
         "@type": "WebSite",
         "name": "Mi-Crafts",
@@ -36,76 +40,162 @@
 </head>
 <body>
 
-  <section class="terms-section" style="min-height: 100vh; padding-top: clamp(3rem, 8vw, 5rem);">
+  <main class="doc">
     <div class="container">
-      <span class="section-label">Legal</span>
-      <h2 class="section-title">Privacy Policy</h2>
-      <p class="section-subtitle">Last Updated: April 8, 2026</p>
-      <p class="terms-intro">This Privacy Policy explains how Lunel handles information when you use the app, website, and subscription features. We design the product to keep sensitive cycle and wellness data private and as local to your device as possible.</p>
-      <div class="terms-grid">
-        <div class="terms-card">
-          <div class="terms-number">01</div>
-          <h3>Information You Add to the App</h3>
-          <p>Cycle logs, symptoms, mood entries, notes, and related health or wellness information you add in Lunel are stored locally on your device by default. We do not maintain our own server-side database of your personal cycle history.</p>
-          <ul class="terms-list">
-            <li>No account is required to use the app.</li>
-            <li>Your entries stay on-device unless you enable Apple-managed sync or backups.</li>
-            <li>Exports you create are generated on your device and shared only when you choose to share them.</li>
+      <div class="doc-top">
+        <a href="./" class="doc-back">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H6M11 6l-6 6 6 6"/></svg>
+          Back to Lunel
+        </a>
+      </div>
+
+      <header class="doc-head">
+        <span class="eyebrow">Lunel · Legal</span>
+        <h1>Privacy Policy</h1>
+        <p class="doc-updated">Last updated: 7 November 2026</p>
+        <p class="doc-intro">
+          Lunel is a period and cycle tracker built so that the sensitive part stays with you.
+          This policy explains what the app and this website do with information, in plain language —
+          including the parts where data does leave your device, and why.
+        </p>
+      </header>
+
+      <div class="doc-body">
+        <section class="doc-section">
+          <h2>Who we are</h2>
+          <p>Lunel is published by <strong>Mi-Crafts</strong> (“we”, “us”). This policy covers the Lunel app for iPhone and iPad and the pages at <a href="https://mi-crafts.com/projects/lunel/">mi-crafts.com/projects/lunel</a>.</p>
+          <p>For any privacy question or request, write to <a href="mailto:support@flowen.app">support@flowen.app</a>. We answer from a real mailbox, usually within a few days.</p>
+          <p><strong>In one sentence:</strong> your cycle and health entries are stored on your device, we do not run a server that holds them, and the small amount of data that does leave — anonymous product analytics, subscription status, and anything you explicitly allow through Apple Health or iCloud — is described below.</p>
+        </section>
+
+        <section class="doc-section">
+          <h2>What you add in the app</h2>
+          <p>When you log a period day, flow intensity, mood, energy, symptoms, discharge, pain, activity, sex and protection, or a note, that entry is written to a database on your device (Apple SwiftData). It is not uploaded to us.</p>
+          <ul>
+            <li>No account, email address or password is required to use Lunel.</li>
+            <li>We cannot read, search or recover your entries — there is no back end of ours to read them from.</li>
+            <li>Exports and PDF reports are generated on your device and only leave it when you choose to share them.</li>
           </ul>
-        </div>
-        <div class="terms-card">
-          <div class="terms-number">02</div>
-          <h3>iCloud Sync and Apple Services</h3>
-          <p>If you enable iCloud sync in Lunel, your app data may be stored and synchronized using Apple&apos;s iCloud / CloudKit infrastructure associated with your Apple account. Apple handles that processing under its own privacy terms.</p>
-          <ul class="terms-list">
-            <li>iCloud sync is optional.</li>
-            <li>Disabling iCloud sync stops future syncing, but copies previously synchronized through Apple services may remain in your iCloud account according to Apple&apos;s policies.</li>
-            <li>We do not independently access or sell your iCloud-stored health entries.</li>
+        </section>
+
+        <section class="doc-section">
+          <h2>Apple Health</h2>
+          <p>Apple Health access is optional and starts only after you grant permission in the app.</p>
+          <ul>
+            <li><strong>Read, to improve predictions:</strong> menstrual-flow records, wrist temperature, basal body temperature, heart-rate variability (SDNN) and resting heart rate.</li>
+            <li><strong>Write, if you allow it:</strong> the period days you log in Lunel, saved back to Apple Health as menstrual-flow samples. Lunel replaces its own previously written samples in the same range, so days are not duplicated.</li>
+            <li>Apple Health data is processed on your device. It is not sent to us or to our analytics providers.</li>
+            <li>You can revoke access at any time in iOS <em>Settings → Health → Data Access &amp; Devices → Lunel</em>. Lunel keeps working without it.</li>
           </ul>
-        </div>
-        <div class="terms-card">
-          <div class="terms-number">03</div>
-          <h3>Subscriptions and Purchase Data</h3>
-          <p>When you purchase or restore a subscription, transactions are processed by Apple. We use <strong>Apphud</strong> to help manage subscription status, product availability, and purchase-related events in the app.</p>
-          <ul class="terms-list">
-            <li>Apple handles billing information and payment credentials.</li>
-            <li>Apphud may receive subscription identifiers, product identifiers, purchase state, and paywall event data needed to provide purchase functionality.</li>
-            <li>We do not receive your full payment card information from Apple.</li>
+        </section>
+
+        <section class="doc-section">
+          <h2>iCloud sync (Lunel Plus)</h2>
+          <p>If you turn on iCloud sync, your app data is stored in your private iCloud database through Apple CloudKit, tied to your Apple ID. We do not operate that storage and cannot access it; Apple processes it under Apple’s own terms and privacy policy.</p>
+          <ul>
+            <li>Sync is off unless you turn it on, and it is part of Lunel Plus.</li>
+            <li>Turning it off stops future syncing; copies already stored in your iCloud account remain there until you delete them through Apple.</li>
+            <li>Apple device backups are separate from Lunel and controlled by your iOS backup settings.</li>
           </ul>
-        </div>
-        <div class="terms-card">
-          <div class="terms-number">04</div>
-          <h3>Analytics and Diagnostics</h3>
-          <p>We use <strong>Firebase Analytics</strong> and <strong>PostHog</strong> to understand how the app is used, which screens or features are opened, and how the paywall or onboarding performs. This helps us improve stability, usability, and product decisions.</p>
-          <ul class="terms-list">
-            <li>These services may process technical data such as app events, device and app version information, locale, and general usage patterns.</li>
-            <li>We do not use these services to sell your health data.</li>
-            <li>We do not use third-party advertising SDKs in Lunel.</li>
+        </section>
+
+        <section class="doc-section">
+          <h2>Purchases and subscription status</h2>
+          <p>App Store purchases are processed by Apple. We never see your payment card or billing address.</p>
+          <ul>
+            <li>We use <strong>Apphud</strong> to check whether Lunel Plus is active, which plans and offers are available, and to record paywall events so the paywall can be improved.</li>
+            <li>Apphud receives subscription and product identifiers, purchase and renewal state, an app-generated user identifier, and event names such as “paywall shown”. It does not receive your cycle entries.</li>
+            <li>You can manage or cancel a subscription in your App Store account settings at any time.</li>
           </ul>
-        </div>
-        <div class="terms-card">
-          <div class="terms-number">05</div>
-          <h3>Retention, Deletion, and Your Choices</h3>
-          <p>You can delete entries inside the app, disable iCloud sync, or remove the app from your device. Because your core data is stored locally or through Apple-managed sync, deleting local data may make it unrecoverable unless a backup remains in your Apple account.</p>
-          <ul class="terms-list">
-            <li>You can choose whether to enable iCloud sync.</li>
-            <li>You can manage subscriptions through your App Store settings.</li>
-            <li>You can stop using the app at any time.</li>
+        </section>
+
+        <section class="doc-section">
+          <h2>Analytics and diagnostics</h2>
+          <p>Lunel includes privacy-conscious product analytics. It is used to understand which screens and features are used and where the app fails — not to follow you around the internet.</p>
+          <ul>
+            <li>Providers: <strong>Firebase Analytics</strong> (Google) and <strong>PostHog</strong>. Crash and diagnostic information may also reach them.</li>
+            <li>What may be processed: screen views, feature events, app version, iOS version, device model and locale, a pseudonymous identifier, and the approximate region derived from your network.</li>
+            <li><strong>What is never sent:</strong> period dates, flow, mood, energy, symptoms, discharge, pain, activity, sex and protection entries, or the text of your notes. The app records that a category was logged (for example “daily log completed”), never its value.</li>
+            <li>Lunel contains no advertising SDKs, does not show ads, and does not request App Tracking Transparency permission or use the advertising identifier.</li>
+            <li>We do not sell personal information, and we do not share it with data brokers.</li>
           </ul>
-        </div>
-        <div class="terms-card">
-          <div class="terms-number">06</div>
-          <h3>Children, Changes, and Contact</h3>
-          <p>Lunel is not directed to children under 13, and we do not knowingly collect personal information from children through our own backend systems. We may update this Privacy Policy from time to time as the app or legal requirements evolve.</p>
-          <ul class="terms-list">
-            <li>Material updates will be reflected by updating the date at the top of this page.</li>
-            <li>If you have privacy questions, contact <a href="mailto:support@flowen.app">support@flowen.app</a>.</li>
-            <li>Publisher: Mi-Crafts.</li>
+        </section>
+
+        <section class="doc-section">
+          <h2>This website</h2>
+          <p>The Lunel pages are static files hosted on GitHub Pages. GitHub receives standard web-server information — including your IP address, browser and requested page — in order to serve them, under GitHub’s privacy statement.</p>
+          <ul>
+            <li>The site sets no cookies and runs no analytics or advertising scripts. The typeface and the App Store badge are served from this domain, not from third parties.</li>
+            <li>If you send a message through the contact form, it is delivered by <strong>Formspree</strong>, which processes your email address and message in order to forward them to us.</li>
+            <li>Ordering through the App Store badge takes you to Apple, where Apple’s privacy policy applies.</li>
           </ul>
+        </section>
+
+        <section class="doc-section">
+          <h2>Why we process data (legal bases)</h2>
+          <p>Where the EU or UK GDPR applies, we rely on:</p>
+          <ul>
+            <li><strong>Your consent</strong> — Apple Health access, iCloud sync, and analytics where consent is required. You can withdraw it at any time in the app or in iOS Settings.</li>
+            <li><strong>Performance of a contract</strong> — providing the app and the Lunel Plus subscription you purchased.</li>
+            <li><strong>Legitimate interests</strong> — keeping the app stable and secure, fixing crashes, and understanding at a high level which features are used.</li>
+            <li><strong>Legal obligation</strong> — where we must keep or disclose information by law.</li>
+          </ul>
+        </section>
+
+        <section class="doc-section">
+          <h2>Retention and deletion</h2>
+          <ul>
+            <li>App entries stay on your device until you delete them. In <em>Settings → Delete all data</em> you can erase everything Lunel has stored; deleting the app has the same effect on that device.</li>
+            <li>iCloud copies are removed when you delete the data in the app with sync enabled, or through your iCloud account settings.</li>
+            <li>Analytics events are retained by the providers for a limited period according to their retention settings, then deleted or aggregated.</li>
+            <li>Contact messages are kept only as long as needed to answer them.</li>
+          </ul>
+        </section>
+
+        <section class="doc-section">
+          <h2>Your rights</h2>
+          <p>Depending on where you live, you may have the right to access, correct, delete, restrict or object to the processing of your personal data, to receive it in a portable format, and to withdraw consent. You may also lodge a complaint with your data protection authority.</p>
+          <ul>
+            <li>Most of this you can do directly in the app, without asking us.</li>
+            <li>Because your health entries live on your device, we usually cannot retrieve or delete them for you — but we can delete analytics and contact records we hold.</li>
+            <li>Write to <a href="mailto:support@flowen.app">support@flowen.app</a>; we answer within the period required by applicable law.</li>
+          </ul>
+        </section>
+
+        <section class="doc-section">
+          <h2>Security and international transfers</h2>
+          <p>Data on your device is protected by iOS: device passcode, Face ID or Touch ID, and iOS file protection. Please keep your device locked and your Apple ID secure — that is the main protection for your entries.</p>
+          <p>Our analytics and subscription providers (Firebase, PostHog, Apphud) may process data outside your country, including in the United States. Where required, transfers rely on appropriate safeguards such as the European Commission’s Standard Contractual Clauses or an applicable adequacy decision.</p>
+        </section>
+
+        <section class="doc-section">
+          <h2>Children</h2>
+          <p>Lunel is not directed to, and is not intended for, children under 13 (or the minimum age of digital consent where you live, up to 16 in the EEA). We do not knowingly collect personal information from children through our own systems. If you believe a child has sent us information, contact us and we will delete it.</p>
+        </section>
+
+        <section class="doc-section">
+          <h2>Changes to this policy</h2>
+          <p>We may update this policy as the app or the law changes. The date at the top always shows the current version, and material changes will be visible in the app’s release notes or on this page before they take effect.</p>
+        </section>
+
+        <section class="doc-section">
+          <h2>Contact</h2>
+          <p>Questions about this policy, or a request about your data: <a href="mailto:support@flowen.app">support@flowen.app</a>. Publisher: Mi-Crafts.</p>
+        </section>
+      </div>
+
+      <div class="doc-foot">
+        <a href="./" class="doc-back">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H6M11 6l-6 6 6 6"/></svg>
+          Back to Lunel
+        </a>
+        <div class="doc-related">
+          <a href="terms.html">Terms of Use</a>
+          <a href="mailto:support@flowen.app">Contact</a>
         </div>
       </div>
     </div>
-  </section>
+  </main>
 
 </body>
 </html>
