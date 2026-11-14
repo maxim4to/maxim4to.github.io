@@ -27,19 +27,19 @@ const translations = {
             },
             q3: {
                 question: "Does the game collect my data?",
-                answer: "The game itself does not collect personal data and stores all game data locally on your device. However, Mars Defence may collect non-personalized technical and analytical data (such as error logs, performance metrics, and aggregated usage statistics) for the purpose of improving game performance and conducting statistical analysis. All such data is anonymized and cannot be used to identify individual users. Additionally, our advertising partner Google AdMob may collect advertising-related data (like advertising ID and device information) to show you relevant ads. You can control this through the App Tracking Transparency prompt and your device settings."
+                answer: "Mars Defence has no accounts and keeps your progress on your device. To improve the game, it collects gameplay analytics linked to a device identifier (via Talo). Our advertising partner Google AdMob collects data such as your advertising ID, approximate location and ad interactions to show and measure ads. See the Privacy Policy for details."
             },
             q4: {
                 question: "What data does advertising collect?",
-                answer: "Google AdMob may collect advertising ID, device information, app usage data, and general location data to show relevant ads and measure ad performance. This data helps provide you with more relevant advertisements. You can control this data collection through your device's privacy settings and the App Tracking Transparency prompt."
+                answer: "Google AdMob collects your device's advertising ID, your IP address (used to estimate approximate location), interactions with the app and ads, and diagnostic data. It uses this data to show and measure ads, for analytics and to prevent fraud. In the EEA, the UK and Switzerland you are asked for consent before ads load, and on any device you can reset or limit your advertising ID in the system settings."
             },
             q5: {
                 question: "What is App Tracking Transparency?",
-                answer: "App Tracking Transparency (ATT) is an iOS feature that requires apps to ask permission before tracking users across other apps and websites. When you first open Mars Defence, you'll see a prompt asking if you want to allow tracking. Choosing \"Allow\" enables personalized ads, while \"Ask App Not to Track\" shows non-personalized ads. You can change this setting anytime in your device settings."
+                answer: "App Tracking Transparency (ATT) is an iOS feature: apps must ask your permission before tracking you across other companies' apps and websites. Mars Defence does not ask for this permission, so on iOS it does not get your advertising identifier and does not track you across apps. You can check this at any time in Settings > Privacy & Security > Tracking."
             },
             q6: {
-                question: "How to disable ads?",
-                answer: "Ads are part of the free game model and cannot be disabled. However, you can control the type of ads you see by managing your tracking preferences through the App Tracking Transparency prompt and your device settings."
+                question: "Can I play without ads?",
+                answer: "Mars Defence only shows optional rewarded ads: an ad plays only when you choose to watch one in exchange for an in-game bonus. If you don't want to see ads, just skip these bonuses. You can also limit ad personalization in your device settings and, in the EEA and the UK, through the consent form."
             }
         },
         privacy: {
