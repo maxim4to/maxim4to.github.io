@@ -737,10 +737,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault();
-
             const targetId = this.getAttribute('href');
             if (!targetId || !targetId.startsWith('#')) return;
+
+            e.preventDefault();
 
             history.pushState({ targetId }, '', targetId);
             scrollToSection(targetId);
